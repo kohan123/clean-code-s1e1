@@ -13,7 +13,7 @@ body {
 .aaa img {
     width: 100%;
 }
-.aaa .more_inf {
+.aaa .more-inf {
     font-family: fantasy, cursive;
 }
 
@@ -67,7 +67,7 @@ h3, label[for="new-task"] {
     margin: 0;
     text-transform: uppercase;
 }
-input {
+input[type="text"] {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +79,7 @@ input {
     font-family: Lato, sans-serif;
     color: #888;
 }
-input:focus {
+input[type="text"]:focus {
     color: #333;
 }
 
@@ -108,7 +108,7 @@ li > * {
     vertical-align: middle;
 }
 
-li > input {
+li > input[type="checkbox"] {
     margin: 0 10px;
 }
 li > label {
@@ -117,7 +117,7 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li > input {
+li > input[type="text"] {
     width: 226px
 }
 li > button.delete:hover {
@@ -139,15 +139,15 @@ ul#completed-tasks label {
 }
 
 /* Edit Task */
-ul li input {
+ul li input[type="text"] {
     display:none
 }
 
-ul li.editMode input {
+ul li.edit-mode input[type="text"] {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+ul li.edit-mode label {
     display:none;
 }
