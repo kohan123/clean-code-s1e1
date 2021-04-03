@@ -32,7 +32,7 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className = "list__element";
+    listItem.className="list__element";
 
     label.innerText=taskString;
     label.className='task';
@@ -40,12 +40,12 @@ var createNewTaskElement=function(taskString){
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="list__element__task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="list__element__btn_edit list__element__btn";
 
-    deleteButton.className="delete list__element__btn";
+    deleteButton.className="list__element__delete list__element__btn";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -159,7 +159,7 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
     var editButton=taskListItem.querySelector("button.list__element__btn_edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var deleteButton=taskListItem.querySelector("button.list__element__delete");
 
 
     //Bind editTask to edit button.

@@ -24,7 +24,7 @@ body {
 }
 
 .layout
-.more-inf {
+.layot__more-inf {
 
     font-family: fantasy, cursive;
 
@@ -47,7 +47,7 @@ body {
 
 }
 
-.task {
+.list__element__task {
 
     width: 56%;
     display: inline-block;
@@ -55,7 +55,7 @@ body {
 
 }
 
-.task-row-wrapper {
+.main-page-element__task-row-wrapper {
 
     display: flex;
 
@@ -194,12 +194,12 @@ p > .list__element__btn:hover {
 
 }
 
-.list__element > .list__element__btn.delete:hover {
+.list__element > .list__element__btn.list__element__delete:hover {
 
     color: #cf2323;
 }
 
-.list__element__btn.delete 
+.list__element__btn.list__element__delete 
 img {
 
     height: 2em;
@@ -208,7 +208,7 @@ img {
 
 }
 
-.list__element__btn.delete 
+.list__element__btn.list__element__delete 
 img:hover {
 
     transform: rotateZ(0);
